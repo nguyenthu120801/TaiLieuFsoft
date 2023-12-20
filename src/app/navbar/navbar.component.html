@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-lg bg-light shadow">
+  <div class="container-fluid text-uppercase">
+    <a routerLink="/home" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+      <h2 class="m-0 text-green"><i class="bi bi-book"></i> Books Store</h2>
+    </a>
+    <button class="navbar-toggler" type="button" aria-expanded="false" aria-label="Toggle navigation"
+      data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+      <div class="offcanvas-header mt-sm-3">
+        <button type="button" class="btn-close ms-2" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 align-items-center px-4 px-lg-5">
+          <li class="d-lg-none nav-item">
+            <a class="nav-link" routerLink="/login">Join Now</a>
+            <hr class="d-lg-none">
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/home" routerLinkActive="active"
+              [routerLinkActiveOptions]="{exact: true}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" routerLink="/books">Books</a>
+          </li>
+        </ul>
+        <form class="d-flex align-items-center px-4 px-lg-5" role="search">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search" name="search"
+            [(ngModel)]="searchTerm" (keyup)="search($event)">
+        </form>
+        <div class=" d-flex icon align-items-center px-4 px-lg-5 fs-2">
+          <div class="dropdown">
+            <i class="bi bi-heart-fill" type="button" data-bs-toggle="dropdown" aria-expanded="false"></i>
+            <ul class="dropdown-menu">
+              <li><button class="dropdown-item" type="button"><img src="../../assets/image/book-9.png" alt="book love"
+                    width="100px" height="100px"> Featured Books </button></li>
+              <li><button class="dropdown-item" type="button"><img src="../../assets/image/book-8.png" alt="book love"
+                    width="100px" height="100px"> Featured Books </button></li>
+            </ul>
+          </div>
+          <div class="">
+            <i routerLink="/cart" class="bi bi-cart3 mx-3 d-flex align-items-center" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false"><span class="bg-danger badge"
+                style="font-size: 10px;">{{totalItem}}</span></i>
+          </div>
+        </div>
+        <div>
+          <!-- <a *ngIf="user === null" routerLink="../login" class="btn btn-success py-4 px-lg-5 text-white ms-2 d-none d-lg-block">Join Now <i
+              class="bi bi-arrow-right"></i></a> -->
+          <div *ngIf="user" class="dropdown">
+            <button class="btn btn-success py-4 px-lg-5 text-white ms-2 d-none d-lg-block dropdown-toggle" type="button"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              Hi!, {{user?.firstName}}
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" (click)="logout()">Log Out <i class="bi bi-box-arrow-right mx-3"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

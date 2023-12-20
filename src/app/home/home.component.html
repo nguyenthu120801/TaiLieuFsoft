@@ -1,0 +1,303 @@
+<app-navbar></app-navbar>
+<!-- Slider start -->
+<section class="home" id="home">
+
+    <div class="row">
+
+        <div class="content col-md-6 col-sm-12">
+            <h1>upto 75% off</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deserunt nostrum accusamus. Nam alias sit
+                necessitatibus, aliquid ex minima at!</p>
+            <a href="#" class="btn btn-success" routerLink="/books">Shop Now</a>
+        </div>
+
+        <div class="swiper books-slider col-md-6 col-sm-12 col row">
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+                <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                    <img src="{{ slide.img }}" alt="" width="100%">
+                </div>
+            </ngx-slick-carousel>
+            <img src="../../assets/image/stand.png" class="stand" alt="">
+        </div>
+
+    </div>
+
+</section>
+<!-- Slider end -->
+<!-- icons section starts  -->
+<div class="container">
+    <section class="icons-container">
+        <div class="row">
+            <div class="icons col-md-3 col-sm-6 d-flex flex-row align-items-center">
+                <i class="bi bi-truck me-2"></i>
+                <div class="content">
+                    <h3>free shipping</h3>
+                    <p>order over $100</p>
+                </div>
+            </div>
+
+            <div class="icons col-md-3 col-sm-6 d-flex flex-row align-items-center">
+                <i class="bi bi-shield-lock me-2"></i>
+                <div class="content">
+                    <h3>secure payment</h3>
+                    <p>100 secure payment</p>
+                </div>
+            </div>
+
+            <div class="icons col-md-3 col-sm-6 d-flex flex-row align-items-center">
+                <i class="bi bi-arrow-clockwise me-2"></i>
+                <div class="content">
+                    <h3>easy returns</h3>
+                    <p>10 days returns</p>
+                </div>
+            </div>
+
+            <div class="icons col-md-3 col-sm-6 d-flex flex-row align-items-center">
+                <i class="bi bi-headset me-2"></i>
+                <div class="content">
+                    <h3>24/7 support</h3>
+                    <p>call us anytime</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+<!-- icons section ends -->
+<!-- book start-->
+<section class="featured" id="featured">
+    <div class="container">
+        <h1 class="heading"><span>trending books</span></h1>
+        <div class="row">
+            <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig2">
+                <div ngxSlickItem *ngFor="let item of books" class="slide">
+                    <div class=" col card h-100 mx-2">
+                        <!-- Sale badge-->
+                        <div class="icons text-center">
+                            <a href="#"><i class="bi bi-heart-fill mx-2"></i></a>
+                            <a routerLink="/book-detail/{{item.BookId}}"><i class="bi bi-eye mx-2"></i></a>
+                        </div>
+                        <!-- Product image-->
+                        <img class="card-img-top img-fluid" src={{item.image}} alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">{{item.BookName| truncate:[20, '...']}}</h5>
+                                <!-- Product reviews-->
+                                <p class="d-flex justify-content-center small text-warning mb-2">
+                                    {{item.Author}}
+                                </p>
+                                <!-- Product price-->
+                                <div *ngIf="item.Discount === 0; else elseBlock">
+                                    <span class="">${{item.Price}}</span>
+                                </div>
+                                <ng-template #elseBlock>
+                                    <div style="color: red;">
+                                        <i class="bi bi-bookmark-heart-fill"></i> <span #elseBlock
+                                            class="text-muted text-decoration-line-through">${{item.Price}}</span>
+                                        ${{item.Price-(item.Price * item.Discount)}}
+                                    </div>
+                                </ng-template>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-success mt-auto" (click)="addToCart(item)">Add to
+                                    cart</a></div>
+                        </div>
+                    </div>
+                </div>
+            </ngx-slick-carousel>
+        </div>
+    </div>
+</section>
+<!-- category -->
+
+<section class="about" id="#about">
+    <div class="container">
+        <h1 class="heading" ><span>About BookStore</span></h1>
+        <div class="row">
+            <div class="col-md-3 mb-5">
+                <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig1">
+                    <div ngxSlickItem *ngFor="let bookmark of Bookmarks" class="slide">
+                        <img src="{{ bookmark.img }}" alt="" width="100%">
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+            <div class="col-md-9 about-body">
+                <h1 class="font-effect-shadow-multiple">Welcome to BookStores</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit possimus similique atque
+                    perspiciatis deserunt harum voluptatibus dolorem quos minima voluptates, temporibus accusamus
+                    blanditiis, sit modi nostrum. Numquam, assumenda saepe! Dignissimos? <br><br>
+                    Temporibus iste hic, rem possimus cum dolores quam facere nostrum et, mollitia blanditiis saepe
+                    deleniti alias autem, impedit expedita illo? Explicabo voluptatem placeat non sit asperiores totam
+                    natus aperiam dolorem?
+                    Totam, suscipit. Deleniti sunt aut beatae amet labore reprehenderit, maiores, ex ullam assumenda id
+                    suscipit ipsa a? Quae consequuntur nobis, dicta maxime fugit nostrum. Fugit qui eum nulla tempora
+                    deserunt.
+                    Explicabo, in debitis eligendi quae sed ea, voluptatem, veritatis impedit obcaecati nulla rerum ab?
+                    Molestiae qui impedit voluptates consequuntur magnam amet aliquid eaque ipsam id dolor, porro omnis
+                    voluptate. Eveniet!
+                    <br><br>
+                    Adipisci eos quis sint expedita enim necessitatibus dolor similique laudantium, laboriosam fugiat
+                    quia quo repellat, explicabo vel assumenda quam placeat, quibusdam repudiandae aspernatur eaque
+                    cupiditate non? Minima officiis blanditiis consequatur?
+                    <br><br>
+                    Temporibus iste hic, rem possimus cum dolores quam facere nostrum et, mollitia blanditiis saepe
+                    deleniti alias autem, impedit expedita illo? Explicabo voluptatem placeat non sit asperiores totam
+                    natus aperiam dolorem?
+                    Totam, suscipit. Deleniti sunt aut beatae amet labore reprehenderit, maiores, ex ullam assumenda id
+                    suscipit ipsa a? Quae consequuntur nobis, dicta maxime fugit nostrum. Fugit qui eum nulla tempora
+                    deserunt.
+                    Explicabo, in debitis eligendi quae sed ea, voluptatem, veritatis impedit obcaecati nulla rerum ab?
+                    Molestiae qui impedit voluptates consequuntur magnam amet aliquid eaque ipsam id dolor, porro omnis
+                    voluptate. Eveniet!
+                </p>
+                <div class="row about-list">
+                    <div class="col-md-6 col-12">
+                        <ul>
+                            <li><i class="bi bi-bookmark-check"></i> Lorem ipsum dolor sit amet</li>
+                            <li><i class="bi bi-bookmark-check"></i> Lorem ipsum dolor sit amet</li>
+                            <li><i class="bi bi-bookmark-check"></i> Lorem ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-12">
+                        <ul>
+                            <li><i class="bi bi-bookmark-check"></i> Lorem ipsum dolor sit amet</li>
+                            <li><i class="bi bi-bookmark-check"></i> Lorem ipsum dolor sit amet</li>
+                            <li><i class="bi bi-bookmark-check"></i> Lorem ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Slider deal -->
+<section class="deal" id="deal">
+    <div class="row">
+        <div class="content col-md-6 col-sm-12">
+            <p class="fs-3 fw-bold p-deal">Deal Of the day</p>
+            <h1 class="fw-bold">Upto 50% Off</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam deserunt nostrum accusamus. Nam alias sit
+                necessitatibus, aliquid ex minima at!</p>
+            <a href="#" class="btn btn-success" routerLink="/books">Shop Now</a>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <img src="../../assets/image/deal-img.jpg" alt="deal" class="img-fluid">
+        </div>
+    </div>
+</section>
+<!-- client review -->
+<section class="review">
+    <div class="container">
+        <h1 class="heading"><span>Client's review</span></h1>
+        <section>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10 col-xl-8 text-center">
+                    <p class="mb-4 pb-2 mb-md-5 pb-md-0">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
+                        numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
+                        quisquam eum porro a pariatur veniam.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row text-center">
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <div class="d-flex justify-content-center mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp"
+                            class="rounded-circle shadow-1-strong" width="150" height="150" />
+                    </div>
+                    <h5 class="mb-3">Maria Smantha</h5>
+                    <h6 class="text-primary mb-3">Client review website</h6>
+                    <p class="px-xl-3">
+                        <i class="fas fa-quote-left pe-2"></i>Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic
+                        tenetur.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0 text-warning">
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-5 mb-md-0">
+                    <div class="d-flex justify-content-center mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(2).webp"
+                            class="rounded-circle shadow-1-strong" width="150" height="150" />
+                    </div>
+                    <h5 class="mb-3">Lisa Cudrow</h5>
+                    <h6 class="text-primary mb-3">Client review website</h6>
+                    <p class="px-xl-3">
+                        <i class="fas fa-quote-left pe-2"></i>Ut enim ad minima veniam, quis nostrum
+                        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0 text-warning">
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-0">
+                    <div class="d-flex justify-content-center mb-4">
+                        <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(9).webp"
+                            class="rounded-circle shadow-1-strong" width="150" height="150" />
+                    </div>
+                    <h5 class="mb-3">John Smith</h5>
+                    <h6 class="text-primary mb-3">Client review website</h6>
+                    <p class="px-xl-3">
+                        <i class="fas fa-quote-left pe-2"></i>At vero eos et accusamus et iusto odio
+                        dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.
+                    </p>
+                    <ul class="list-unstyled d-flex justify-content-center mb-0 text-warning">
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                        <li>
+                            <i class="bi bi-star-fill"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+
+<app-footer></app-footer>
+<router-outlet></router-outlet>
+<!-- </div> -->

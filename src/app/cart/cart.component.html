@@ -1,0 +1,57 @@
+<app-navbar></app-navbar>
+<ng-container *ngIf="books.length != 0">
+    <div class="container">
+        <div class="card-table">
+            <div class="cart-book">
+                <table class="table table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Sr.No</th>
+                            <th>Book Name</th>
+                            <th>Image</th>
+                            <th>Price</th>
+                            <th>Discount</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of books; let i =  index">
+                            <td>{{i+1}}</td>
+                            <td>{{item.BookName}}</td>
+                            <td><img src="{{item.image}}" alt="" width="150px" height="200px"></td>
+                            <td>${{item.Price}}</td>
+                            <td>{{item.Discount}}</td>
+                            <td><input type="number" value="{{item.quantity}}" min="1"></td>
+                            <td>{{item.quantity*(item.Price-(item.Price*item.Discount))|number}}</td>
+                            <td><button (click)="removeItem(item)" class="btn btn-danger"><i class="bi bi-trash3-fill"></i> Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"></td>
+                            <td><button [routerLink]="['/books']" class="btn btn-warning">Shop More</button></td>
+                            <td><button class="btn btn-success">Check out</button></td>
+                            <td><strong>Grand Total: ${{grandTotal}}</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</ng-container>
+<ng-container *ngIf="books.length == 0">
+    <div class="container">
+        <div class="card">
+            <h5 class="card-title">My Cart</h5>
+        </div>
+        <div class="center">
+            <img src="../../assets/image/Bookcart.png" height="200px" alt="cart_empty">
+            <h4>Your cart is empty!</h4>
+            <h6>Add item to it now!</h6>
+            <button routerLink="/books" class="btn btn- btn-success">
+                Shop Now
+            </button>
+        </div>
+    </div>
+</ng-container>
+<app-footer></app-footer>

@@ -1,0 +1,301 @@
+[
+  {
+    "category": [
+      {
+        "CatId": 1,
+        "CateName": "Action and Adventure"
+      },
+      {
+        "CatId": 2,
+        "CateName": "Classics"
+      },
+      {
+        "CatId": 3,
+        "CateName": "Comic Book or Graphic Novel"
+      },
+      {
+        "CatId": 4,
+        "CateName": "Detective and Mystery"
+      },
+      {
+        "CatId": 5,
+        "CateName": "Fantasy"
+      },
+      {
+        "CatId": 6,
+        "CateName": "Historical Fiction"
+      },
+      {
+        "CatId": 7,
+        "CateName": "Horror"
+      },
+      {
+        "CatId": 8,
+        "CateName": "Romance"
+      },
+      {
+        "CatId": 9,
+        "CateName": "Science Fiction (Sci-Fi)"
+      },
+      {
+        "CatId": 10,
+        "CateName": "Trending Books"
+      }
+    ],
+    "Books": [
+      {
+        "BookId": 1,
+        "CatId": 1,
+        "BookName": "Life Of Pi Paperback - Black & White",
+        "image": "https://m.media-amazon.com/images/I/81E9oNSK3bL.jpg",
+        "Date": "2003-05-01",
+        "Author": "Yann Martel",
+        "Price": 11.99,
+        "quantity": 1,
+        "Discount": 0.05,
+        "Description": "The Three Musketeers is a novel by Alexandre Dumas. Set in the 17th century, it recounts the adventures of a young man named d'Artagnan after he leaves home to travel to Paris, to join the Musketeers of the Guard. D'Artagnan is not one of the musketeers of the title; those being his friends Athos, Porthos and Aramis, inseparable friends who live by the motto \"all for one, one for all\", a motto which is first put forth by d'Artagnan. In genre, The Three Musketeers is primarily a historical novel and adventure. However Dumas also frequently works into the plot various injustices, abuses and absurdities of the ancien regime, giving the novel an additional political aspect at a time when the debate in France between republicans and monarchists was still fierce. The story was first serialized from March to July 1844, during the July monarchy, four years before the French Revolution of 1848 violently established the second Republic. The author's father, Thomas-Alexandre Dumas had been a well-known general in France's Republican army during the French revolutionary wars. Although adaptations tend to portray d'Artagnan and the three musketeers as heroes, the novel portrays less appealing characters, who are willing to commit violence over slight insults and through unquestioning loyalty to the king and queen, and treat their servants and supposed social inferiors with contempt and violence."
+      },
+      {
+        "BookId": 2,
+        "CatId": 1,
+        "BookName": "The Three Musketeers Paperback",
+        "image": "https://m.media-amazon.com/images/I/41TxXqToCCL.jpg",
+        "Date": "2014-12-05",
+        "Author": "Alexandre Dumas ",
+        "Price": 9.51,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": "A MODERN CLASSIC AND INTERNATIONAL BESTSELLER WINNER OF THE MAN BOOKER PRIZE.\n After the sinking of a cargo ship, a solitary lifeboat remains bobbing on the wild blue Pacific. The only survivors from the wreck are a sixteen-year-old boy named Pi, a hyena, a wounded zebra, an orangutan—and a 450-pound Royal Bengal tiger. Soon the tiger has dispatched all but Pi Patel, whose fear, knowledge, and cunning allow him to coexist with the tiger, Richard Parker, for 227 days while lost at sea. When they finally reach the coast of Mexico, Richard Parker flees to the jungle, never to be seen again.\n The Japanese authorities who interrogate Pi refuse to believe his story and press him to tell them \"the truth.\" After hours of coercion, Pi tells a second story, a story much less fantastical, much more conventional—but is it more true?\"A story to make you believe in the soul-sustaining power of fiction.\"—Los Angeles Times Book Review"
+      },
+      {
+        "BookId": 3,
+        "CatId": 1,
+        "BookName": "The Call of the Wild (Gold Classics)",
+        "image": "https://m.media-amazon.com/images/I/81dNPwFDBxL.jpg",
+        "cateId": 1,
+        "Date": "2020-12-21",
+        "Author": "Jack London",
+        "Price": 1.4,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": "The Call of the Wild is a novel by Jack London published in 1903. The story is set in the Yukon during the 1890s Klondike Gold Rush—a period in which strong sled dogs were in high demand. The novel's central character is a dog named Buck, a domesticated dog living at a ranch in the Santa Clara Valley of California as the story opens. Stolen from his home and sold into service as sled dog in Alaska, he reverts to a wild state. Buck is forced to fight in order to dominate other dogs in a harsh climate. Eventually he sheds the veneer of civilization, relying on primordial instincts and learned experience to emerge as a leader in the wild.London lived for most of a year in the Yukon collecting material for the book. The story was serialized in the Saturday Evening Post in the summer of 1903; a month later it was released in book form. The novel’s great popularity and success made a reputation for London. Much of its appeal derives from the simplicity of this tale of survival. As early as 1908 the story was adapted to film and it has since seen several more cinematic adaptations."
+      },
+      {
+        "BookId": 4,
+        "CatId": 2,
+        "BookName": "To Kill a Mockingbird",
+        "image": "https://m.media-amazon.com/images/I/81aY1lxk+9L.jpg",
+        "Date": "2002-01-01",
+        "Author": "Harper Lee",
+        "Price": 10.99,
+        "quantity": 1,
+        "Discount": 0.05,
+        "Description": "Harper Lee's Pulitzer Prize-winning masterwork of honor and injustice in the deep South—and the heroism of one man in the face of blind and violent hatred\nOne of the most cherished stories of all time, To Kill a Mockingbird has been translated into more than forty languages, sold more than forty million copies worldwide, served as the basis for an enormously popular motion picture, and was voted one of the best novels of the twentieth century by librarians across the country. A gripping, heart-wrenching, and wholly remarkable tale of coming-of-age in a South poisoned by virulent prejudice, it views a world of great beauty and savage inequities through the eyes of a young girl, as her father—a crusading local lawyer—risks everything to defend a black man unjustly accused of a terrible crime."
+      },
+      {
+        "BookId": 5,
+        "CatId": 2,
+        "BookName": "Little Women",
+        "image": "https://images-us.bookshop.org/ingram/9780316489270.jpg?height=500&v=v2",
+        "Date": "2018-09-25",
+        "Author": "Louisa May Alcott",
+        "Price": 26,
+        "quantity": 1,
+        "Discount": 0.1,
+        "Description": "The beautiful 150th anniversary edition of Louisa May Alcott's classic tale of the four March sisters, featuring new illustrations and an introduction by New York Times bestselling author J. Courtney Sullivan For generations, children around the world have come of age with Louisa May Alcott's March girls: hardworking eldest sister Meg, headstrong, impulsive Jo, timid Beth, and precocious Amy. With their father away at war, and their loving mother Marmee working to support the family, the four sisters have to rely on one another for support as they endure the hardships of wartime and poverty. We witness the sisters growing up and figuring out what role each wants to play in the world, and, along the way, join them on countless unforgettable adventures.Readers young and old will fall in love with this beloved classic, at once a lively portrait of nineteenth-century family life and a feminist novel about young women defying society's expectations."
+      },
+      {
+        "BookId": 6,
+        "CatId": 2,
+        "BookName": "Beloved Paperback",
+        "image": "https://m.media-amazon.com/images/I/41Rdzbiqh7L._SX322_BO1,204,203,200_.jpg",
+        "Date": "2004-06-08",
+        "Author": "Toni Morrison",
+        "Price": 12.99,
+        "quantity": 1,
+        "Discount": 0.4,
+        "Description": "PULITZER PRIZE WINNER • NEW YORK TIMES BESTSELLER • An unflinchingly look into the abyss of slavery, from the acclaimed Nobel Prize winner.\n This spellbinding novel transforms history into a story as powerful as Exodus and as intimate as a lullaby. With a new afterword. Sethe, its protagonist, was born a slave and escaped to Ohio, but eighteen years later she is still not free. She has too many memories of Sweet Home, the beautiful farm where so many hideous things happened. And Sethe’s new home is haunted by the ghost of her baby, who died nameless and whose tombstone is engraved with a single word: Beloved. Filled with bitter poetry and suspense as taut as a rope, Beloved is a towering achievement."
+      },
+      {
+        "BookId": 7,
+        "CatId": 3,
+        "BookName": "Watchmen",
+        "image": "https://m.media-amazon.com/images/I/410D4H0IqjL._SX318_BO1,204,203,200_.jpg",
+        "Date": "2019-05-20",
+        "Author": "Alan oore",
+        "Price": 12.74,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": "A hit HBO original series, Watchmen, the groundbreaking series from award-winning author Alan Moore, presents a world where the mere presence of American superheroes changed history--the U.S. won the Vietnam War, Nixon is still president, and the Cold War is in full effect.\n Considered the greatest graphic novel in the history of the medium, the Hugo Award-winning story chronicles the fall from grace of a group of superheroes plagued by all-too-human failings. Along the way, the concept of the superhero is dissected as an unknown assassin stalks the erstwhile heroes.\nThis edition of Watchmen, the groundbreaking series from Alan Moore, the award-winning author of V For Vendetta and Batman: The Killing Joke, features art from industry legend Dave Gibbons, with high-quality, recolored pages found in Watchmen: Absolute Edition."
+      },
+      {
+        "BookId": 8,
+        "CatId": 3,
+        "BookName": "The Walking Dead: Compendium One Paperback – Unabridged",
+        "image": "https://m.media-amazon.com/images/I/51S12ntkIbL._SX323_BO1,204,203,200_.jpg",
+        "Date": "2009-05-19",
+        "Author": "Robert Kirkman",
+        "Price": 27.49,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": "Introducing the first eight volumes of the fan-favorite, New York Times Best Seller series collected into one massive paperback collection! Collects The Walking Dead #1-48. This is the perfect collection for any fan of the Emmy Award-winning television series on AMC: over one thousand pages chronicling the beginning of Robert Kirkman's Eisner Award-winning continuing story of survival horror- from Rick Grimes' waking up alone in a hospital, to him and his family seeking solace on Hershel's farm, and the controversial introduction of Woodbury despot: The Governor. In a world ruled by the dead, we are finally forced to finally start living."
+      },
+      {
+        "BookId": 9,
+        "CatId": 3,
+        "BookName": "The Boy, the Mole, the Fox and the Horse Hardcover",
+        "image": "https://m.media-amazon.com/images/I/418D9yYGB3L._SX369_BO1,204,203,200_.jpg",
+        "Date": "2019-10-22",
+        "Author": "Charlie Mackesy",
+        "Price": 10.35,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": " “The Boy, the Mole, the Fox and the Horse is not only a thought-provoking, discussion-worthy story, the book itself is an object of art.”- Elizabeth Egan, The New York Times From British illustrator, artist, and author Charlie Mackesy comes a journey for all ages that explores life’s universal lessons, featuring 100 color and black-and-white drawings.\n “What do you want to be when you grow up?” asked the mole.“Kind,” said the boy. Charlie Mackesy offers inspiration and hope in uncertain times in this beautiful book, following the tale of a curious boy, a greedy mole, a wary fox and a wise horse who find themselves together in sometimes difficult terrain, sharing their greatest fears and biggest discoveries about vulnerability, kindness, hope, friendship and love. The shared adventures and important conversations between the four friends are full of life lessons that have connected with readers of all ages. "
+      },
+      {
+        "BookId": 10,
+        "CatId": 4,
+        "BookName": "The Night Fire (A Renée Ballard and Harry Bosch Novel, 22) Hardcover – Big Book",
+        "image": "https://m.media-amazon.com/images/I/41zqZwXZ-WL._SY291_BO1,204,203,200_QL40_FMwebp_.jpg",
+        "Date": "2019-10-22",
+        "Author": "Michael Connelly",
+        "Price": 19.94,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": " A FINALIST FOR THE LOS ANGELES TIMES BOOK PRIZE.\nA NEW YORK TIMES BOOK REVIEW BEST CRIME NOVEL OF THE YEAR\n A CrimeReads Best Crime Novel Notable selection\n Harry Bosch and LAPD Detective Renée Ballard come together again on the murder case that obsessed Bosch's mentor, the man who trained him---new from #1 New York Times bestselling author Michael Connelly \nBack when Harry Bosch was just a rookie homicide detective, he had an inspiring mentor who taught him to take the work personally and light the fire of relentlessness for every case. Now that mentor, John Jack Thompson, is dead, and his widow gives Bosch a murder book, one that Thompson took with him when he left the LAPD twenty years before -- the unsolved killing of a troubled young man.\nBosch takes the murder book to Detective Renée Ballard and asks her to help him discover what about this crime lit Thompson's fire all those years ago. As she begins her inqueries -- while still working her own cases on the midnight shift -- Ballad finds aspects of the initial investigation that just don't add up.\nThe bond between Bosch and Ballard tightens as they become a formidable investigation team. And they soon arrive at a disturbing question: Did Thompson steal the murder book to work the case in retirement, or to make sure it never got solved?\nWritten with the intense pacing and masterful suspense that have made Michael Connelly \"the hard-boiled fiction master of our time\" (NPR), The Night Fire continues the unofficial partnership of two fierce detectives determined not to let the fire with burn out."
+      },
+      {
+        "BookId": 11,
+        "CatId": 5,
+        "BookName": "The Water Dancer (Oprah's Book Club): A Novel Hardcover",
+        "image": "https://m.media-amazon.com/images/I/51IA60IJysL._SX327_BO1,204,203,200_.jpg",
+        "Date": "2019-09-24",
+        "Author": "Ta-Nehisi Coates",
+        "Price": 14.55,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": " “This potent book about America’s most disgraceful sin establishes [Ta-Nehisi Coates] as a first-rate novelist.”—San Francisco Chronicle \nIN DEVELOPMENT AS A MAJOR MOTION PICTURE • Adapted by Ta-Nehisi Coates and Kamilah Forbes, directed by Nia DaCosta, and produced by MGM, Plan B, and Oprah Winfrey’s Harpo Films\nNOMINATED FOR THE NAACP IMAGE AWARD • NAMED ONE OF PASTE’S BEST NOVELS OF THE DECADE • NAMED ONE OF THE BEST BOOKS OF THE YEAR BY Time • NPR • The Washington Post • Chicago Tribune • Vanity Fair • Esquire • Good Housekeeping • Paste • Town & Country • The New York Public Library • Kirkus Reviews • Library Journal Young Hiram Walker was born into bondage. When his mother was sold away, Hiram was robbed of all memory of her—but was gifted with a mysterious power. Years later, when Hiram almost drowns in a river, that same power saves his life. This brush with death births an urgency in Hiram and a daring scheme: to escape from the only home he’s ever known.So begins an unexpected journey that takes Hiram from the corrupt grandeur of Virginia’s proud plantations to desperate guerrilla cells in the wilderness, from the coffin of the Deep South to dangerously idealistic movements in the North. Even as he’s enlisted in the underground war between slavers and the enslaved, Hiram’s resolve to rescue the family he left behind endures.\nThis is the dramatic story of an atrocity inflicted on generations of women, men, and children—the violent and capricious separation of families—and the war they waged to simply make lives with the people they loved. Written by one of today’s most exciting thinkers and writers, The Water Dancer isa propulsive, transcendent work that restores the humanity of those from whom everything was stolen.\nPraise for The Water Dancer\n“Ta-Nehisi Coates is the most important essayist in a generation and a writer who changed the national political conversation about race with his 2015 memoir, Between the World and Me. So naturally his debut novel comes with slightly unrealistic expectations—and then proceeds to exceed them. The Water Dancer . . . is a work of both staggering imagination and rich historical significance. . . . What’s most powerful is the way Coates enlists his notions of the fantastic, as well as his fluid prose, to probe a wound that never seems to heal. . . . Timeless and instantly canon-worthy.”—Rolling Stone"
+      },
+      {
+        "BookId": 12,
+        "CatId": 6,
+        "BookName": "Memoirs of a Geisha: A Novel Paperback",
+        "image": "https://m.media-amazon.com/images/I/51O9HqW8ZAL._SX322_BO1,204,203,200_.jpg",
+        "Date": "1999-01-10",
+        "Author": "Arthur Golden",
+        "Price": 14.55,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": " A literary sensation and runaway bestseller, this brilliant debut novel tells with seamless authenticity and exquisite lyricism the true confessions of one of Japan's most celebrated geisha.\nNominated as one of America’s best-loved novels by PBS’s The Great American Read.\nSpeaking to us with the wisdom of age and in a voice at once haunting and startlingly immediate, Nitta Sayuri tells the story of her life as a geisha. It begins in a poor fishing village in 1929, when, as a nine-year-old girl with unusual blue-gray eyes, she is taken from her home and sold into slavery to a renowned geisha house. We witness her transformation as she learns the rigorous arts of the geisha: dance and music; wearing kimono, elaborate makeup, and hair; pouring sake to reveal just a touch of inner wrist; competing with a jealous rival for men's solicitude and the money that goes with it.\nIn Memoirs of a Geisha, we enter a world where appearances are paramount; where a girl's virginity is auctioned to the highest bidder; where women are trained to beguile the most powerful men; and where love is scorned as illusion. It is a unique and triumphant work of fiction—at once romantic, erotic, suspenseful—and completely unforgettable."
+      },
+      {
+        "BookId": 13,
+        "CatId": 6,
+        "BookName": "The Help Hardcover",
+        "image": "https://m.media-amazon.com/images/I/41rc1NK5nIL._SX329_BO1,204,203,200_.jpg",
+        "Date": "2009-02-10",
+        "Author": "Kathryn Stockett",
+        "Price": 13.79,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": " The #1 New York Times bestselling novel and basis for the Academy Award-winning film—a timeless and universal story about the lines we abide by, and the ones we don’t—nominated as one of America’s best-loved novels by PBS’s The Great American Read.\nAibileen is a black maid in 1962 Jackson, Mississippi, who’s always taken orders quietly, but lately she’s unable to hold her bitterness back. Her friend Minny has never held her tongue but now must somehow keep secrets about her employer that leave her speechless. White socialite Skeeter just graduated college. She’s full of ambition, but without a husband, she’s considered a failure.\nTogether, these seemingly different women join together to write a tell-all book about work as a black maid in the South, that could forever alter their destinies and the life of a small town..."
+      },
+      {
+        "BookId": 14,
+        "CatId": 7,
+        "BookName": "Bird Box: A Novel Kindle Edition",
+        "image": "https://m.media-amazon.com/images/I/41sRIihnXzL.jpg",
+        "Date": "2014-05-13",
+        "Author": "Josh Malerman",
+        "Price": 12.49,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": "Now a Netflix film starring Sandra Bullock, Trevante Rhodes, John Malkovich, Sarah Paulson, and Rosa Salazar!\nWritten with the narrative tension of The Road and the exquisite terror of classic Stephen King, Bird Box is a propulsive, edge-of-your-seat horror thriller, set in an apocalyptic near-future world—a masterpiece of suspense from the brilliantly imaginative Josh Malerman.\nSomething is out there . . .\nSomething terrifying that must not be seen. One glimpse and a person is driven to deadly violence. No one knows what it is or where it came from.\nFive years after it began, a handful of scattered survivors remain, including Malorie and her two young children. Living in an abandoned house near the river, she has dreamed of fleeing to a place where they might be safe. Now, that the boy and girl are four, it is time to go. But the journey ahead will be terrifying: twenty miles downriver in a rowboat—blindfolded—with nothing to rely on but her wits and the children’s trained ears. One wrong choice and they will die. And something is following them. But is it man, animal, or monster?\nEngulfed in darkness, surrounded by sounds both familiar and frightening, Malorie embarks on a harrowing odyssey—a trip that takes her into an unseen world and back into the past, to the companions who once saved her. Under the guidance of the stalwart Tom, a motely group of strangers banded together against the unseen terror, creating order from the chaos. But when supplies ran low, they were forced to venture outside—and confront the ultimate question: in a world gone mad, who can really be trusted?\nInterweaving past and present, Josh Malerman’s breathtaking debut is a horrific and gripping snapshot of a world unraveled that will have you racing to the final page."
+      },
+      {
+        "BookId": 15,
+        "CatId": 8,
+        "BookName": "Where the Crawdads Sing Hardcover ",
+        "image": "https://m.media-amazon.com/images/I/51gH2xzBM2L._SX330_BO1,204,203,200_.jpg",
+        "Date": "2018-08-14",
+        "Author": "Delia Owens",
+        "Price": 12.39,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": " For years, rumors of the “Marsh Girl” have haunted Barkley Cove, a quiet town on the North Carolina coast. So in late 1969, when handsome Chase Andrews is found dead, the locals immediately suspect Kya Clark, the so-called Marsh Girl. But Kya is not what they say. Sensitive and intelligent, she has survived for years alone in the marsh that she calls home, finding friends in the gulls and lessons in the sand. Then the time comes when she yearns to be touched and loved. When two young men from town become intrigued by her wild beauty, Kya opens herself to a new life—until the unthinkable happens.\nWhere the Crawdads Sing is at once an exquisite ode to the natural world, a heartbreaking coming-of-age story, and a surprising tale of possible murder. Owens reminds us that we are forever shaped by the children we once were, and that we are all subject to the beautiful and violent secrets that nature keeps."
+      },
+      {
+        "BookId": 16,
+        "CatId": 9,
+        "BookName": "Royal Holiday",
+        "image": "https://m.media-amazon.com/images/I/51G5bfAReZL._SX329_BO1,204,203,200_.jpg",
+        "Date": "2019-10-01",
+        "Author": "Jasmine Guillory",
+        "Price": 15.12,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": "Vivian Forest has been out of the country a grand total of one time, so when she gets the chance to tag along on her daughter Maddie’s work trip to England to style a royal family member, she can’t refuse. She’s excited to spend the holidays taking in the magnificent British sights, but what she doesn’t expect is to become instantly attracted to a certain private secretary, his charming accent, and unyielding formality.\nMalcolm Hudson has worked for the Queen for years and has never given a personal, private tour—until now. He is intrigued by Vivian the moment he meets her and finds himself making excuses just to spend time with her. When flirtatious banter turns into a kiss under the mistletoe, things snowball into a full-on fling.\nDespite a ticking timer on their holiday romance, they are completely fine with ending their short, steamy affair come New Year’s Day...or are they?"
+      },
+      {
+        "BookId": 17,
+        "CatId": 10,
+        "BookName": "The Midnight Library",
+        "image": "https://images1.penguinrandomhouse.com/cover/9780525559474",
+        "Date": "2019-10-01",
+        "Author": "Matt Haig",
+        "Price": 26,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": "The #1 New York Times bestselling WORLDWIDE phenomenon\n\n Winner of the Goodreads Choice Award for Fiction | A Good Morning America Book Club Pick | Independent (London) Ten Best Books of the Year\n\n“A feel-good book guaranteed to lift your spirits.”—The Washington Post.\n\nThe dazzling reader-favorite about the choices that go into a life well lived, from the acclaimed author of How To Stop Time and The Comfort Book.\n\nSomewhere out beyond the edge of the universe there is a library that contains an infinite number of books, each one the story of another reality. One tells the story of your life as it is, along with another book for the other life you could have lived if you had made a different choice at any point in your life. While we all wonder how our lives might have been, what if you had the chance to go to the library and see for yourself? Would any of these other lives truly be better?\n\nIn The Midnight Library, Matt Haig’s enchanting blockbuster novel, Nora Seed finds herself faced with this decision. Faced with the possibility of changing her life for a new one, following a different career, undoing old breakups, realizing her dreams of becoming a glaciologist; she must search within herself as she travels through the Midnight Library to decide what is truly fulfilling in life, and what makes it worth living in the first place."
+      },
+      {
+        "BookId": 18,
+        "CatId": 10,
+        "BookName": "Malibu Rising",
+        "image": "https://images1.penguinrandomhouse.com/cover/9781524798673",
+        "Date": "2019-10-01",
+        "Author": "Taylor Jenkins Reid",
+        "Price": 18,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": "If it feels like Taylor Jenkins Reid’s name is always on everybody’s lips, you’re not wrong. The author of Daisy Jones & The Six (filming began in September 2021 for the Amazon TV adaptation, starring Riley Keough in the titular role and Sam Claflin as brooding rocker Billy Dunne) published an irresistible new novel in June. The story centers on four famous siblings who throw an epic party to celebrate the end of the summer. But over the course of twenty-four hours, the family drama that ensues will change their lives forever."
+      },
+      {
+        "BookId": 19,
+        "CatId": 10,
+        "BookName": "The Hill We Climb",
+        "image": "https://images1.penguinrandomhouse.com/cover/9780593465271",
+        "Date": "2019-10-01",
+        "Author": "Amanda Gorman",
+        "Price": 18,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": "When 22-year-old Amanda Gorman stepped up to the mic on January 20 and dazzled millions of viewers with her words, she made history as America’s youngest inaugural poet. Her electrifying poem, “The Hill We Climb,” is published here in its entirety and includes an enduring foreword by Oprah Winfrey. The slim volume can be returned to again and again for inspiration, hope, and affirmation."
+      },
+      {
+        "BookId": 20,
+        "CatId": 10,
+        "BookName": "Klara and the Sun",
+        "image": "https://images1.penguinrandomhouse.com/cover/9780593311295",
+        "Date": "2019-10-01",
+        "Author": "Kazuo Ishiguro",
+        "Price": 16.95,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": "This magnificent novel from the Nobel laureate and author of Never Let Me Go was named to the New York Times 100 Most Notable Books of 2021. Indeed, the story of Klara, an Artificial Friend, who keenly observes passersby from her perch in the store and hopes to be chosen by a customer, is incredibly unique and memorable. The book makes us think about the ways artificial intelligence will permeate our lives and is also a timely meditation on love and loneliness."
+      },
+      {
+        "BookId": 21,
+        "CatId": 10,
+        "BookName": "Plane your text here",
+        "image": "https://images1.penguinrandomhouse.com/cover/9780593329832",
+        "Date": "2019-10-01",
+        "Author": "Kazuo Ishiguro",
+        "Price": 10.2,
+        "quantity": 1,
+        "Discount": 0,
+        "Description": "This magnificent novel from the Nobel laureate and author of Never Let Me Go was named to the New York Times 100 Most Notable Books of 2021. Indeed, the story of Klara, an Artificial Friend, who keenly observes passersby from her perch in the store and hopes to be chosen by a customer, is incredibly unique and memorable. The book makes us think about the ways artificial intelligence will permeate our lives and is also a timely meditation on love and loneliness."
+      }
+    ]
+  }
+]

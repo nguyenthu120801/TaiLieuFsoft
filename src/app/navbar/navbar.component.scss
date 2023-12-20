@@ -1,0 +1,32 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+nav {
+    padding: 0 0;
+}
+
+div {
+    padding: 0 0;
+}
+
+.btn-success {
+    border-radius: 0;
+    border-color: #27ae60;
+    background-color: #27ae60;
+}
+
+.nav-link:hover {
+    color: #27ae60;
+}
+
+.text-green {
+    color: #27ae60;
+}
+
+.offcanvas-body .icon {
+    color: #27ae60;
+}
+
+.offcanvas-body .icon i {
+    cursor: pointer;
+}
+

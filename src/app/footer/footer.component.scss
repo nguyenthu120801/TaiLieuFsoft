@@ -1,0 +1,15 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+.footer{
+    background-color: #27ae60; 
+    margin-top: 5rem;
+    @media screen and (width < 500px ) {
+        .footer-image{
+            img{
+                width: 200px;
+                height: 200px;
+                margin-left: 21%;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,79 @@
+<app-navbar></app-navbar>
+
+<div class="container books">
+    <div class="Link-title">
+        <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+            aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a routerLink="/home"><i class="bi bi-house-check"></i> Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Book</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="header text-center">
+        There is no friend as loyal as a book.
+        <p>--Ernest Hemingway--</p>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <ul class="list-group">
+                <li class="list-group-item" (click)="getAllBooks()"><i class="bi bi-tags"></i> All Books</li>
+                <li class="list-group-item" *ngFor="let item of listCate" (click)="FilterCate(item.CatId)">
+                    <i class="bi bi-tags"></i>{{item.CateName}}
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-10">
+            <!-- Section-->
+            <div class="Books-List">
+                <div class="row  gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <div class="col mb-5 "
+                        *ngFor="let item of bookList | filter: searchKey: 'BookName' | paginate:{itemsPerPage:itemsPerPage, currentPage: p}">
+                        <div class="card h-100">
+                            <!-- Sale badge-->
+                            <div class="icons text-center">
+                                <a href="#"><i class="bi bi-heart-fill mx-2"></i></a>
+                                <a href="#" [routerLink]="['/book-detail',item.BookId]"><i class="bi bi-eye mx-2"></i></a>
+                            </div>
+                            <!-- Product image-->
+                            <img class="card-img-top img-fluid" src={{item.image}} alt="..." />
+                            <!-- Product details-->
+                            <div class="card-body p-4">
+                                <div class="text-center">
+                                    <!-- Product name-->
+                                    <h5 class="fw-bolder">{{item.BookName| truncate:[20, '...']}}</h5>
+                                    <!-- Product reviews-->
+                                    <p class="d-flex justify-content-center small text-warning mb-2">
+                                        {{item.Author}}
+                                    </p>
+                                    <!-- Product price-->
+                                    <div *ngIf="item.Discount === 0; else elseBlock">
+                                        <span class="">${{item.Price}}</span>
+                                    </div>
+                                    <ng-template #elseBlock>
+                                        <div style="color: red;">
+                                            <i class="bi bi-bookmark-heart-fill"></i> <span #elseBlock
+                                                class="text-muted text-decoration-line-through">${{item.Price}}</span>
+                                            ${{item.Price-(item.Price * item.Discount)}}
+                                        </div>
+                                    </ng-template>
+                                </div>
+                            </div>
+                            <!-- Product actions-->
+                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                <div class="text-center"><a class="btn btn-outline-success mt-auto"
+                                        (click)="addToCart(item)">Add to
+                                        cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 py-5 d-flex justify-content-center">
+                <pagination-controls (pageChange)=" p = $event"></pagination-controls>
+            </div>
+
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

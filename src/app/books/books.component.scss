@@ -1,0 +1,78 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+
+.Link-title {
+    padding: 4rem;
+    font-size: large;
+    background-image: url(../../assets/image/iStock-old-book-156208502_1200.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+}
+
+.Link-title .breadcrumb a {
+    text-decoration: none;
+    color: #fff;
+}
+.header {
+    font-family: 'Tangerine', serif;
+    font-size: 5rem;
+    text-shadow: 4px 4px 4px #aaa;
+    color: #27ae60;
+    margin-bottom: 2rem;
+    p{
+      font-size: 1.4rem;
+    }
+}
+
+.list-group{
+    .list-group-item:hover{
+        background-color: #27ae60;
+    }
+    .list-group-item:active{
+        background-color: #27ae60;
+    }
+}
+.Books-List .card img{
+    width: 450px;
+    height: 300px;
+}
+.card{
+    position: relative;
+    .icons{
+        display: none;
+    }
+    img{
+        transition: all 0.5s ease;
+    }
+}
+.card:hover{
+    .icons{
+        display: block; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        transition: 1s ease;
+        background-color: #27ae60;
+        transform: translateY(-2%);
+        z-index: 1;
+        i{
+            font-size: 24px;
+            color: #fff;
+        }
+        .bi-heart-fill:active{
+            color: red;
+        }
+    }
+    
+    img{
+        z-index: 1;
+        transform: translateY(11.5%);
+    }
+    .card-body{
+        z-index: 0;
+    }
+}

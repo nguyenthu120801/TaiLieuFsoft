@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "thunthe151440-bookstores": {
+      "hosting": {
+        "Books-Store-ThuNT50": [
+          "thunthe151440-bookstores"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "thunthe151440-bookstores"
+  }
+}

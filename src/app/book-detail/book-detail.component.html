@@ -1,0 +1,146 @@
+<app-navbar></app-navbar>
+<div class="container">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a routerLink="/home"><i class="bi bi-house-check"></i> Home</a></li>
+            <li class="breadcrumb-item"><a routerLink="/books">Books</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Book-Detail</li>
+        </ol>
+    </nav>
+</div>
+<div class="container mt-5 mb-5" *ngIf="bookItem">
+    <div class="card" *ngFor="let item of bookItem">
+        <div class="row g-0">
+            <div class="col-md-6 border-end">
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="main_image"> <img src={{item.image}} id="main_product_image" width="300" height="450"> </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-3 right-side">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h3 class="fw-bold">{{item.BookName}}</h3>
+                        <span class="heart text-success"><i class="bi bi-heart-fill"></i></span>
+                    </div>
+                    <div class="mt-2 pr-3 content">
+                        <p>Date: {{item.Date | date:'dd-MM-YYYY'}}</p>
+                        <p class="text-warning">Create By: {{item.Author}}</p>
+                    </div>
+                    <h3>
+                        <div *ngIf="item.Discount === 0; else elseBlock">
+                            <span class="">${{item.Price}}</span>
+                        </div>
+                        <ng-template #elseBlock>
+                            <div style="color: red;">
+                                <i class="bi bi-bookmark-heart-fill"></i> <span #elseBlock
+                                    class="text-muted text-decoration-line-through">${{item.Price}}</span>
+                                ${{item.Price-(item.Price * item.Discount)}}
+                            </div>
+                        </ng-template>
+                    </h3>
+                    <div class="ratings d-flex flex-row align-items-center">
+                        <div class="d-flex flex-row text-warning"> <i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i> </div>
+                        <span>441 reviews</span>
+                    </div>
+                    <div class="mt-5"><span class="fw-bold">Quantity: <input type="number" value="1" min="1"></span>
+                    </div>
+                    <div class="buttons d-flex flex-row mt-5 gap-3"> <button class="btn btn-outline-success">Buy
+                            Now</button> <button class="btn btn-success" (click)="addToCart(item)">Add to cart</button> </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <h3 class="fw-bold">Book Description:</h3>
+            <p class="des-text text-justify">{{item.Description}}</p>
+            <div class="des-img mt-5">
+                <img src="../../assets/image/Heading.png" alt="quang cao" class="img-fluid">
+            </div>
+        </div>
+    </div>
+    <div class="row height d-flex justify-content-center align-items-center mt-5 mb-5">
+        <div class="col-md-7">
+            <div class="card-comment">
+                <div class="p-2">
+                    <h5>Comments</h5>
+                </div>
+                <div class="mt-3 d-flex flex-row align-items-center p-3 form-color">
+                    <img src="https://i.imgur.com/zQZSWrt.jpg" width="50" class="rounded-circle me-2">
+                    <input type="text" class="form-control" placeholder="Enter your comment...">
+                </div>
+                <div class="mt-2">
+                    <div class="d-flex flex-row p-3">
+                        <img src="https://i.imgur.com/zQZSWrt.jpg" width="40" height="40" class="rounded-circle me-3">
+                        <div class="w-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex flex-row align-items-center">
+                                    <span class="me-2">Brian selter</span>
+                                    <small class="c-badge">Top Comment</small>
+                                </div>
+                                <small>12h ago</small>
+                            </div>
+                            <p class="text-justify comment-text mb-0">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam
+                            </p>
+                            <div class="d-flex flex-row user-feed">
+                                <span class="wish"><i class="bi bi-hand-thumbs-up-fill"></i>24</span>
+                                <span class="mx-3"><i class="bi bi-reply-all-fill"></i>Reply</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row p-3"> <img src="https://i.pinimg.com/564x/14/13/32/141332b01bf21762da4f431b13999345.jpg" width="40" height="40"
+                            class="rounded-circle me-3">
+                        <div class="w-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex flex-row align-items-center">
+                                    <span class="me-2">Seltos Majito</span>
+                                    <small class="c-badge">Top Comment</small>
+                                </div>
+                                <small>2h ago</small>
+                            </div>
+                            <p class="text-justify comment-text mb-0">
+                                Tellus in hac habitasse platea dictumst
+                                vestibulum. Lectus nulla at volutpat diam ut venenatis tellus. Aliquam etiam erat velit
+                                scelerisque in dictum non consectetur. Sagittis nisl rhoncus mattis rhoncus urna neque
+                                viverra justo nec. Tellus cras adipiscing enim eu turpis egestas pretium aenean
+                                pharetra. Aliquam faucibus purus in massa.
+                            </p>
+                            <div class="d-flex flex-row user-feed">
+                                <span class="wish"><i class="bi bi-hand-thumbs-up-fill"></i>14</span>
+                                <span class="mx-3"><i class="bi bi-reply-all-fill"></i>Reply</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row p-3">
+                        <img src="https://i.imgur.com/agRGhBc.jpg" width="40" height="40" class="rounded-circle me-3">
+                        <div class="w-100">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex flex-row align-items-center">
+                                    <span class="me-2">Maria Santola</span>
+                                    <small class="c-badge">Top Comment</small>
+                                </div>
+                                <small>12h ago</small>
+                            </div>
+                            <p class="text-justify comment-text mb-0">
+                                Id eu nisl nunc mi ipsum faucibus. Massa massa
+                                ultricies mi quis hendrerit dolor. Arcu bibendum at varius vel pharetra vel turpis nunc
+                                eget. Habitasse platea dictumst quisque sagittis purus sit amet volutpat. Urna
+                                condimentum mattis pellentesque id.Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam
+                            </p>
+                            <div class="d-flex flex-row user-feed">
+                                <span class="wish"><i class="bi bi-hand-thumbs-up-fill"></i>54</span>
+                                <span class="mx-3"><i class="bi bi-reply-all-fill"></i>Reply</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>
